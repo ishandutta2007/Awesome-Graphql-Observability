@@ -55,9 +55,9 @@ Below is the comparison of commercial SaaS offerings for GraphQL observability, 
 
 ## ⚡ Open-Source GitHub Projects
 
-Curated open-source GraphQL observability components, tracing frameworks, and telemetry backends, ordered by **GitHub Star Count (Descending)**:
+Curated open-source GraphQL observability components, tracing frameworks, and telemetry backends, ordered by **GitHub Stars_Count (Descending)**:
 
-| Project | GitHub Stars | Description | Category |
+| Project | GitHub_Stars | Description | Category |
 | :--- | :--- | :--- | :--- |
 | **[Grafana](https://github.com/grafana/grafana)** 📊 | [<img src="https://img.shields.io/github/stars/grafana/grafana?style=social&color=white" alt="Grafana Stars"/>](https://github.com/grafana/grafana/stargazers) | Open-source visualization and dashboarding platform with rich GraphQL plugin & OTLP support. | Metrics & Dashboards |
 | **[Prometheus](https://github.com/prometheus/prometheus)** 🔥 | [<img src="https://img.shields.io/github/stars/prometheus/prometheus?style=social&color=white" alt="Prometheus Stars"/>](https://github.com/prometheus/prometheus/stargazers) | Systems monitoring and time-series database with widespread exporters for GraphQL servers. | Metrics Collection |
@@ -78,7 +78,7 @@ Contributions are super welcome! 🌟 Follow these simple steps:
 
 1. 🍴 **Fork** this repository.
 2. 📝 **Add or update** entries in `README.md` following the standard table formatting.
-3. 🔎 Ensure all links, pricing details, and star badges are accurate.
+3. 🔎 Ensure all links, pricing details, and Stars_Badges are accurate.
 4. 🚀 Submit a **Pull Request** with a clear title and description.
 
 ---
