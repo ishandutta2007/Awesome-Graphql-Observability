@@ -1,211 +1,107 @@
-# Awesome-Graphql-Observability
-
-## Top GraphQL Observability Platforms Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on GraphQL Metrics, Tracing, Schema Usage Analytics, Performance & Federation Observability*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **GraphQL Observability**. These systems collect operation-level metrics, traces, error rates, schema usage, and client insights so teams can understand and optimize GraphQL APIs and federated supergraphs.
-
-
-
-**Examples** include GraphQL Hive, Apollo GraphOS / Studio, Stellate, New Relic GraphQL Monitoring, Datadog APM, Hasura Cloud Metrics, Grafbase, GraphCDN Analytics, and Inigo (the category leaders).
-
-
-
-**Open-source emphasis**: GraphQL observability has a strong open core in **GraphQL Hive** (schema registry + usage analytics + gateway) plus OpenTelemetry instrumentation for major GraphQL servers. This section is heavily expanded around Hive and open tracing.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-- **[GraphQL Hive Cloud](https://the-guild.dev/graphql/hive)**  
-
-  Managed offering of the open-source Hive platform—schema registry, operation analytics, usage reporting, and federation observability.
-
-
-
-- **[Apollo GraphOS / Studio](https://www.apollographql.com/graphos)**  
-
-  Apollo’s platform for supergraph management with schema registry, operation metrics, client awareness, and performance insights.
-
-
-
-- **[Stellate](https://stellate.co/)**  
-
-  Edge GraphQL platform with deep request-level metrics, error tracking, caching analytics, and performance observability.
-
-
-
-- **[New Relic (GraphQL / APM)](https://newrelic.com/)**  
-
-  Full-stack observability platform with GraphQL-aware tracing and metrics when instrumented via agents or OpenTelemetry.
-
-
-
-- **[Datadog APM](https://www.datadoghq.com/)**  
-
-  APM and observability platform supporting GraphQL tracing and metrics through standard instrumentation and integrations.
-
-
-
-- **[Hasura Cloud Metrics](https://hasura.io/)**  
-
-  Built-in metrics and observability for Hasura GraphQL Engine in the managed cloud offering.
-
-
-
-- **[Grafbase](https://grafbase.com/)**  
-
-  GraphQL platform with observability and analytics features for edge and federated GraphQL workloads.
-
-
-
-- **[Inigo](https://inigo.io/)**  
-
-  GraphQL-specific security and observability platform providing schema insights, performance, and runtime visibility.
-
-
-
-- **[GraphCDN / Stellate Analytics heritage](https://stellate.co/)**  
-
-  Analytics capabilities originating from GraphCDN, now part of Stellate’s GraphQL metrics suite.
-
-
-
-- **[Other APM / API observability tools with GraphQL support](https://www.example.com/)**  
-
-  Additional commercial observability platforms that instrument GraphQL via OpenTelemetry or native agents.
-
-
-
-## Open-Source GitHub Projects
-
-- **[GraphQL Hive](https://github.com/graphql-hive)**  
-
-  Fully open-source (MIT) schema registry, usage analytics, and GraphQL federation platform—self-host for operation metrics, schema checks, and observability.
-
-
-
-- **[Hive Gateway OpenTelemetry integration](https://the-guild.dev/graphql/hive)**  
-
-  Built-in OpenTelemetry support in Hive Gateway for traces and metrics across the GraphQL lifecycle and upstream calls.
-
-
-
-- **[OpenTelemetry GraphQL instrumentation](https://github.com/)**  
-
-  Official and community OpenTelemetry instrumentations for Apollo Server, GraphQL Yoga, Strawberry, and other GraphQL runtimes.
-
-
-
-- **[Apollo Server / Client reporting plugins (open components)](https://github.com/apollographql)**  
-
-  Open instrumentation and reporting libraries used to send traces and usage data to Apollo GraphOS or custom backends.
-
-
-
-- **[GraphQL Yoga / Envelop observability plugins](https://github.com/graphql-hive/graphql-yoga)**  
-
-  Open plugins for metrics, tracing, and logging in the Yoga/Envelop ecosystem.
-
-
-
-- **[Prometheus and Grafana GraphQL exporters](https://github.com/)**  
-
-  Open exporters and dashboards that expose GraphQL operation metrics in Prometheus format.
-
-
-
-- **[Client-side GraphQL analytics open collectors](https://github.com/)**  
-
-  Libraries that report operation names, timing, and errors from browsers or mobile clients to open backends.
-
-
-
-- **[Schema usage and field-level analytics open tools](https://github.com/)**  
-
-  Community projects that analyze which fields and types are actually used from traffic or persisted operations.
-
-
-
-- **[Distributed tracing open backends (Jaeger, Tempo, etc.)](https://github.com/)**  
-
-  Open tracing systems commonly used to store and visualize GraphQL spans collected via OpenTelemetry.
-
-
-
-- **[Custom metrics pipelines with OpenTelemetry Collector](https://github.com/open-telemetry)**  
-
-  Vendor-neutral pipelines for collecting, processing, and exporting GraphQL metrics and traces.
-
-
-
-### Additional Strong Open-Source Options
-
-- Self-hosting **GraphQL Hive** for schema registry + operation analytics without vendor lock-in.
-
-- Instrumenting servers with **OpenTelemetry** and sending data to Jaeger, Grafana Tempo, Prometheus, or a commercial backend.
-
-- Combining Hive usage reporting with open tracing for full request-path visibility.
-
-- Accepting that polished federated supergraph analytics, global edge metrics, and turnkey alerting still favor commercial platforms (Apollo GraphOS, Stellate, Hive Cloud, Datadog, New Relic, Inigo, etc.).
-
-- Focusing open-source efforts on standards (OpenTelemetry), data ownership, and self-hosted control planes.
-
-
-
-**Frameworks for building custom systems**: Instrument GraphQL servers and gateways with OpenTelemetry → collect traces/metrics in an open backend (or Hive) → use Hive or custom analytics for operation and schema usage → alert via open or commercial tools. Suitable for platform teams that want full ownership of observability data. Many production graphs use Hive or Apollo for schema + usage and OpenTelemetry for distributed tracing.
-
-
-
-## How to Contribute
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Observability systems process API traffic and may contain sensitive operation data. Proper access control and retention policies are required. This list is not security or operational advice.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome GraphQL Observability Banner" width="100%">
+</p>
+
+# 🚀 Awesome GraphQL Observability & Tracing [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Graphql-Observability/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Graphql-Observability?style=flat-square" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Graphql-Observability/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Graphql-Observability?style=flat-square" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Graphql-Observability/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Graphql-Observability?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 📊 **A curated list of top SaaS platforms and Open-Source projects for GraphQL Observability, OpenTelemetry Tracing, Schema Usage Analytics, Performance Metrics, and Federation Visibility.**
 
 ---
 
-**Made for GraphQL platform engineers, SREs, and API teams monitoring federated and standalone graphs.**
+## 💡 Overview & Ecosystem Insights
 
-Let's keep GraphQL observability standards-based, actionable, and as open as practical.
+GraphQL observability allows API platform teams, SREs, and developers to monitor operation-level performance, field usage, resolver latency, and supergraph error rates. 
+
+### 📈 Market Size & Industry Structure
+> **Market Size & Structure Analysis:**  
+> The GraphQL Observability & API Performance sector is part of the **~$5.5 Billion Global APM & Observability Market** (projected to reach **$10+ Billion by 2030**). The GraphQL-specific observability space is **moderately fragmented**: enterprise APM giants (Datadog, New Relic) co-exist with specialized GraphQL category leaders (Apollo GraphOS, GraphQL Hive, Stellate). While enterprise full-stack monitoring handles general metrics, schema-aware tracking and field-level usage analytics remain concentrated among specialized GraphQL control planes.
+
+---
+
+## 📑 Table of Contents
+
+- [☁️ SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [⚡ Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ How to Contribute](#%EF%B8%8F-how-to-contribute)
+- [🤝 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## ☁️ SaaS / Hosted Platforms
+
+Below is the comparison of commercial SaaS offerings for GraphQL observability, ordered by **Company Scale / Valuation (Descending)**:
+
+| Platform | Company Valuation / Revenue | Starting Paid Price | Free Tier / Trial Limits | Key Features & Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Datadog APM](https://www.datadoghq.com/)** 🐶 | **~$82 Billion** Market Cap / $4.0B ARR | **$31** per host / month (billed annually) | **14-day free trial** (Full platform access, all APM features) | Enterprise full-stack APM with GraphQL operation tracing, span indexing, and log correlation. |
+| **[New Relic APM](https://newrelic.com/)** 🔮 | **~$6.18 Billion** (Acquired) / $1.0B ARR | **$0.40** per GB data ingest (beyond free tier) | **100 GB/month free ingest** forever + 1 Full Platform user | Distributed tracing and GraphQL-aware telemetry via native agents or OpenTelemetry. |
+| **[Apollo GraphOS](https://www.apollographql.com/graphos)** 🚀 | **$1.5 Billion** Valuation / ~$38M ARR | **$5** per 1M requests (Developer plan) | **60 requests/min limit** + 1-day insights retention + 3 team seats | Supergraph schema registry, operation metrics, client awareness, and field-level analytics. |
+| **[Hasura Cloud Metrics](https://hasura.io/)** ⚡ | **$1.0 Billion** Valuation / $139M Raised | **$99** / month (or usage-based active models) | **Free plan ($0/mo)** for dev/prototyping (limited project scale & passthrough) | Instant GraphQL engine observability, execution trace breakdown, and role-based metrics. |
+| **[Stellate](https://stellate.co/)** 🌐 | **~$25 Million** Funding | **$249** / month (includes 25M metrics requests) | **100,000 requests/month free** forever | Edge GraphQL CDN & gateway with request-level metrics, caching analytics, and rate limiting. |
+| **[GraphQL Hive Cloud](https://the-guild.dev/graphql/hive)** 🐝 | **The Guild** (Bootstrapped Open Core Leaders) | **$20** / month base (includes 1M ops, +$10/1M extra) | **1,000,000 operations/month free** forever (7-day data retention) | Open-core schema registry, operation usage reporting, federation checks, and gateway analytics. |
+| **[Grafbase](https://grafbase.com/)** 📐 | **$7.3 Million** Funding / $2.6M Valuation | **Contact Sales** (Custom tier after trial) | **60-day free trial** (Full edge & federated GraphQL features) | Serverless edge GraphQL platform with built-in analytics, tracing, and federated graph insights. |
+
+---
+
+## ⚡ Open-Source GitHub Projects
+
+Curated open-source GraphQL observability components, tracing frameworks, and telemetry backends, ordered by **GitHub Star Count (Descending)**:
+
+| Project | GitHub Stars | Description | Category |
+| :--- | :--- | :--- | :--- |
+| **[Grafana](https://github.com/grafana/grafana)** 📊 | [<img src="https://img.shields.io/github/stars/grafana/grafana?style=social&color=white" alt="Grafana Stars"/>](https://github.com/grafana/grafana/stargazers) | Open-source visualization and dashboarding platform with rich GraphQL plugin & OTLP support. | Metrics & Dashboards |
+| **[Prometheus](https://github.com/prometheus/prometheus)** 🔥 | [<img src="https://img.shields.io/github/stars/prometheus/prometheus?style=social&color=white" alt="Prometheus Stars"/>](https://github.com/prometheus/prometheus/stargazers) | Systems monitoring and time-series database with widespread exporters for GraphQL servers. | Metrics Collection |
+| **[Hasura GraphQL Engine](https://github.com/hasura/graphql-engine)** ⚡ | [<img src="https://img.shields.io/github/stars/hasura/graphql-engine?style=social&color=white" alt="Hasura Stars"/>](https://github.com/hasura/graphql-engine/stargazers) | Fast GraphQL server on Postgres/SQL with built-in OpenTelemetry & Prometheus metric exporters. | GraphQL Server & Engine |
+| **[Jaeger Tracing](https://github.com/jaegertracing/jaeger)** 🕵️ | [<img src="https://img.shields.io/github/stars/jaegertracing/jaeger?style=social&color=white" alt="Jaeger Stars"/>](https://github.com/jaegertracing/jaeger/stargazers) | CNCF end-to-end distributed tracing backend for storing and visualizing GraphQL spans. | Tracing Backend |
+| **[Apollo Server](https://github.com/apollographql/apollo-server)** 🛡️ | [<img src="https://img.shields.io/github/stars/apollographql/apollo-server?style=social&color=white" alt="Apollo Server Stars"/>](https://github.com/apollographql/apollo-server/stargazers) | Spec-compliant GraphQL server with open plugins for inline tracing, usage reporting, and OTel. | GraphQL Server |
+| **[GraphQL Yoga](https://github.com/dotansimha/graphql-yoga)** 🧘 | [<img src="https://img.shields.io/github/stars/dotansimha/graphql-yoga?style=social&color=white" alt="Yoga Stars"/>](https://github.com/dotansimha/graphql-yoga/stargazers) | Fully featured Node.js/Bun GraphQL server powered by Envelop plugins for OpenTelemetry & logging. | GraphQL Server |
+| **[OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector)** 🔭 | [<img src="https://img.shields.io/github/stars/open-telemetry/opentelemetry-collector?style=social&color=white" alt="OTel Collector Stars"/>](https://github.com/open-telemetry/opentelemetry-collector/stargazers) | Proxy vendor-agnostic collector to receive, process, and export GraphQL traces/metrics. | Telemetry Pipeline |
+| **[Grafana Tempo](https://github.com/grafana/tempo)** ⏱️ | [<img src="https://img.shields.io/github/stars/grafana/tempo?style=social&color=white" alt="Tempo Stars"/>](https://github.com/grafana/tempo/stargazers) | High-scale, cost-effective distributed tracing backend deeply integrated with Grafana. | Tracing Backend |
+| **[OpenTelemetry JS Contrib](https://github.com/open-telemetry/opentelemetry-js-contrib)** 🧰 | [<img src="https://img.shields.io/github/stars/open-telemetry/opentelemetry-js-contrib?style=social&color=white" alt="OTel JS Stars"/>](https://github.com/open-telemetry/opentelemetry-js-contrib/stargazers) | Official OpenTelemetry instrumentation modules for GraphQL execution engines & HTTP servers. | Instrumentation |
+| **[GraphQL Hive Console](https://github.com/kamilkisiela/graphql-hive)** 🐝 | [<img src="https://img.shields.io/github/stars/kamilkisiela/graphql-hive?style=social&color=white" alt="Hive Stars"/>](https://github.com/kamilkisiela/graphql-hive/stargazers) | Open-source (MIT) schema registry, operation usage analytics platform, and gateway control plane. | Schema & Usage Control |
+
+---
+
+## 🛠️ How to Contribute
+
+Contributions are super welcome! 🌟 Follow these simple steps:
+
+1. 🍴 **Fork** this repository.
+2. 📝 **Add or update** entries in `README.md` following the standard table formatting.
+3. 🔎 Ensure all links, pricing details, and star badges are accurate.
+4. 🚀 Submit a **Pull Request** with a clear title and description.
+
+---
+
+## 🤝 Support & Sponsorship
+
+If you found this awesome list helpful, please consider supporting the project:
+
+- ⭐ **Star** this repository to show your appreciation!
+- 🔀 **Fork** and share with your API development & DevOps teams.
+- ☕ **Sponsor / Buy me a coffee:** [<img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=github-sponsors" alt="Sponsor"/>](https://github.com/sponsors/ishandutta2007)
+
+Thank you for helping keep the GraphQL & Observability ecosystem open and accessible! ❤️
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Graphql-Observability&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Graphql-Observability&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for educational & architectural reference purposes.
+- Observability and APM systems process operational API traffic; ensure compliance with data security, GDPR, and privacy standards when capturing GraphQL payloads or variables.
